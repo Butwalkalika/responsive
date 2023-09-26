@@ -1,0 +1,358 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    height: 6vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    
+}
+.logo{
+    display: flex;
+    padding-left: 6vw;
+    
+}
+.logo h1{
+    height: 32px;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 3px;
+    font-size: 24px;
+    color: #262253;
+}
+.logo img{
+    padding: 5px;
+    height: 15px;
+    width: 15px;
+}
+.nav{
+    height: 100%;
+    width: 50%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.drop{
+    height: 70px;
+    width: 80px;
+    position:absolute;
+    display: none;
+    background-color: white;
+}
+.drop2{
+    height: 110px;
+}
+.blogs:hover .drop{
+    display: block;
+}
+.drop ul{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+}
+.nav ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+.btn{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apply-btn{
+    height:40px;
+    width: 140px;
+    background-color: #363D7A;
+    color: #fff;
+    font-weight: 800;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+.apply-btn:hover{
+    background-color: #fff;
+    border:2px solid #31D9F0;
+    color: #31D9F0;
+}
+.menu{
+    display: none;
+}
+.menu-item{
+    display: none;
+}
+
+
+
+.start{
+    height: 100vh;
+    width: calc(100%);
+    background-image: url("banner.png");
+    background-size: cover;
+}
+.learning{
+    height: 50%;
+    width: 50%;
+    padding: 30vh 0px 0px 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.learning h1{
+    font-size: 60px;
+    color: #201D48;
+}
+.start-btn{
+    display: flex;
+    justify-content: space-around;
+}
+#get-start{
+    background-color: #31D9F0;
+    border: none;
+    color: white;
+    transition: 0.5s;
+}
+#get-start:hover{
+background-color: white;
+border: 2px solid #31D9F0;
+color: #31D9F0;
+}
+.learning button{
+    height:70px;
+    width: 250px;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+
+
+.program{
+    height: 100vh;
+    width: 100%;
+}
+.scolor{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.scolorship{
+    height: 60%;
+    width: 20%;
+    background-color: #31D9F0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.scolorship .edu-logo{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.scolorship .info{
+    color: white;
+}
+.yellow{
+    background-color: #FAC231;
+}
+.pur{
+    background-color: #253C8DD6;
+}
+.green{
+    background-color: #31FAD6;
+}
+#graduate{
+    background-color: #31D9F0;
+    border-radius: 5px;
+    color: white;
+}
+
+.pop-program{
+    height: 150px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.pop-program h1{
+    font-size: 36px;
+    padding-bottom: 30px;
+}
+.pop-program button{
+    height: 50px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 15px;
+    padding: 10px 10px;
+}
+
+.courses{
+    height: calc(100% - 20% - 250px);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    height: 100%;
+    width: 20%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.card p{
+    font-size: 10px;
+}
+.card button{
+    height: 25px;
+    width: 100px;
+    color: white;
+    background-color: #31D9F0;
+    border: none;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+.card button:hover{
+    background-color: white;
+    color: #31D9F0;
+    border: 2px solid #31D9F0;
+}
+.card img{
+    width: 100%;
+    height: 45%;
+}
+.view-btn{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.view-btn button{
+    height: 60px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid black;
+}
+@media (max-width:480px) {
+    header{
+        height: 50px;
+    }
+    .logo h1{
+        font-size: 15px;
+    }
+    .nav{
+        display: none;
+    }
+    .menu{
+        font-size: 20px;
+        display: block;
+        padding-right: 20px;
+    }
+    .menu-item{
+        height: 300px;
+        width: 100vw;
+        background-color: #1fb0cd1f;
+        padding: 30px 0px;
+    }
+    .menu-item ul{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+    }
+    .menu-item ul li{
+        font-size: 20px;
+    }
+    .apply-btn{
+        font-size: 12px;
+        height: 30px;
+        width: 100px;
+        padding: 5px 10px;
+    }
+    .start{
+        height: 200px;
+        width: 100%;
+        background-size: cover;
+    }
+    .learning{
+        height: 100%;
+        width: 55%;
+        padding: 0px 0px 0px 28.75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .learning h1{
+        width: 80%;
+        font-size: 20px;
+    }
+    .learning button{
+        font-size: 12px;
+        height: 40px;
+        width: 95px;
+        padding: 5px 10px;
+    }
+    .scolor{
+        height: 60px;
+        width: 100%;
+    }
+    .program{
+        height: 200vh;
+        width: 100%;
+    }
+    .scolorship .edu-logo{
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+    }
+    .info{
+        font-size: 6px;
+    }
+    .pop-program h1{
+        font-size: 20px;
+    }
+    .pop-program button{
+        width: 110px;
+    }
+    .courses{
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        height: 250px;
+        width: 60%;
+    }
+    .view-btn{
+        height: 7%;
+        align-items: start;
+    }
+}
